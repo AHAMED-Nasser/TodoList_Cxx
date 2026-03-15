@@ -1,9 +1,16 @@
 #include <iostream>
+#include <vector>
+#include <string>
+#include "Include/Prompt/PrompterChoiceInt.h"
+#include "Include/GeneralFunctions/MethodePrompt.h"
 
 using namespace std;
 
 int main() {
-    cout << "Hello world" << '\n';
+
+    int userChoice = ShowPrompterChoiceInt::displayPrompterChoiceInt();
+
+    cout << "Vous avez choisi: " << userChoice << '\n';
 
     return 0;
 }
